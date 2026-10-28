@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or these measurements, please cite the survey."
+title: "Representation-Aware Vector Search: pilot study code and measurements"
+version: 1.0.0
+date-released: 2026-11-01
+license: MIT
+repository-code: "https://github.com/YOUR-GITHUB-USERNAME/ravi-survey-pilot"
+authors:
+  - family-names: "[Family name]"
+    given-names: "[Given name]"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "[Supervisor family name]"
+    given-names: "[Supervisor given name]"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+preferred-citation:
+  type: article
+  title: "Representation-Aware Vector Search: A Survey of How Deep Embedding Geometry Shapes Approximate Nearest Neighbor Indexing"
+  journal: "ACM Computing Surveys"
+  year: 2026
+  authors:
+    - family-names: "[Family name]"
+      given-names: "[Given name]"
+    - family-names: "[Supervisor family name]"
+      given-names: "[Supervisor given name]"

@@ -1,0 +1,55 @@
+# COLAB SURVEY: the measurements for the empirical section of the survey paper.
+# Six public backbones, one per training paradigm, on Food-101 (public on Hugging Face, downloaded automatically):
+# all 75,750 "train" images as the database and 20 "validation" images per class (2,020) as queries.
+# Tests predictions P1-P5 of the survey and fills one geometry card per backbone. Every stage resumes after a disconnect.
+name: colab_survey
+out_dir: runs/colab_survey
+seed: 0
+
+dataset:
+  name: food101
+  n_base: 75750
+  n_query: 2020
+  base:  {type: hf, path: ethz/food101, split: train,      cache_dir: /content/hf_cache}
+  query: {type: hf, path: ethz/food101, split: validation, per_class: 20, cache_dir: /content/hf_cache}
+
+models:
+  - {name: resnet50.a1_in1k, family: resnet, paradigm: supervised, dim: 2048}
+  - {name: convnext_base.fb_in22k_ft_in1k, family: convnext, paradigm: supervised-22k, dim: 1024}
+  - {name: vit_base_patch16_224.augreg_in21k_ft_in1k, family: vit-supervised, paradigm: supervised, dim: 768}
+  - {name: vit_base_patch16_clip_224.openai, family: clip, paradigm: image-text, dim: 512, keep_head: true}
+  - {name: vit_base_patch14_dinov2.lvd142m, family: dinov2, paradigm: self-distillation, dim: 768, img_size: 224}
+  - {name: vit_base_patch16_224.mae, family: mim, paradigm: masked-image-modeling, dim: 768}
+
+extract: {batch_size: 128, workers: 2, amp: true}
+dims: [64, 128, 256]
+reductions: [pca, head_rank, head_hub, head_koleo]
+reduction_dims: {head_rank: [256], head_hub: [256], head_koleo: [256]}   # heads only at the card dimension
+fit_sample: 50000
+geometry: {sample: 20000, k: 20}
+
+head:
+  defaults: {steps: 3000, batch: 2048, eval_every: 1000, n_val: 2000}
+  variants:
+    head_rank: {}                   # neighbour ranking only: the reference for P4 and P5
+    head_hub: {lam_hub: 3.0}        # + hubness balancing (P4)
+    head_koleo: {lam_koleo: 1.0}    # + KoLeo spreading, as in DINOv2 (P5)
+
+bench:
+  seeds: [0, 1]
+  n_latency_queries: 1000
+  repeats: 2
+  hnsw:  {M: [16], efConstruction: 200, efSearch: [10, 16, 32, 64, 128, 256, 512, 1024]}
+  ivf:   {nlist: [256], nprobe: [1, 2, 4, 8, 16, 32, 64, 128, 256]}
+  ivfpq: null                     # product quantization is covered by the compression profile instead
+  recall_targets: [0.80, 0.90, 0.95]
+
+survey: {card_dim: 256, targets: [0.80, 0.90], heads: [head_rank, head_hub, head_koleo]}
+
+crossmodal:            # P2: one CLIP model for images and text (open_clip, OpenAI weights)
+  model: ViT-B-16
+  pretrained: openai
+  batch_size: 256
+
+recommender: {basis: e2e_recall, target: 0.90, metric: inv_ndis}
+stats: {n_boot: 2000}
