@@ -1,0 +1,1066 @@
+{
+ "native_cost": {
+  "hnsw@0.9": {
+   "ResNet-50": [
+    539,
+    472
+   ],
+   "ConvNeXt-B": [
+    304,
+    291
+   ],
+   "ViT-B/16": [
+    353,
+    333
+   ],
+   "CLIP ViT-B/16": [
+    336,
+    326
+   ],
+   "DINOv2 ViT-B/14": [
+    251,
+    246
+   ],
+   "MAE ViT-B/16": [
+    279,
+    345
+   ]
+  },
+  "hnsw@0.9_range": [
+   2.15,
+   1.92
+  ],
+  "hnsw@0.9_max_seed_sd": [
+   5.2,
+   6.9
+  ],
+  "hnsw@0.9_upper_bounds": 2,
+  "hnsw@0.95": {
+   "ResNet-50": [
+    755,
+    631
+   ],
+   "ConvNeXt-B": [
+    396,
+    376
+   ],
+   "ViT-B/16": [
+    474,
+    446
+   ],
+   "CLIP ViT-B/16": [
+    438,
+    427
+   ],
+   "DINOv2 ViT-B/14": [
+    296,
+    285
+   ],
+   "MAE ViT-B/16": [
+    349,
+    458
+   ]
+  },
+  "hnsw@0.95_range": [
+   2.55,
+   2.21
+  ],
+  "hnsw@0.95_max_seed_sd": [
+   11.5,
+   8.1
+  ],
+  "hnsw@0.95_upper_bounds": 0,
+  "ivf@0.9": {
+   "ResNet-50": [
+    3684,
+    2772
+   ],
+   "ConvNeXt-B": [
+    1334,
+    1233
+   ],
+   "ViT-B/16": [
+    1436,
+    1332
+   ],
+   "CLIP ViT-B/16": [
+    1327,
+    1229
+   ],
+   "DINOv2 ViT-B/14": [
+    931,
+    906
+   ],
+   "MAE ViT-B/16": [
+    1441,
+    2254
+   ]
+  },
+  "ivf@0.9_range": [
+   3.95,
+   3.06
+  ],
+  "ivf@0.9_max_seed_sd": [
+   28.5,
+   26.8
+  ],
+  "ivf@0.9_upper_bounds": 0,
+  "ivf@0.95": {
+   "ResNet-50": [
+    6056,
+    4559
+   ],
+   "ConvNeXt-B": [
+    2211,
+    1927
+   ],
+   "ViT-B/16": [
+    2436,
+    2167
+   ],
+   "CLIP ViT-B/16": [
+    2175,
+    1922
+   ],
+   "DINOv2 ViT-B/14": [
+    1363,
+    1294
+   ],
+   "MAE ViT-B/16": [
+    1916,
+    3176
+   ]
+  },
+  "ivf@0.95_range": [
+   4.44,
+   3.52
+  ],
+  "ivf@0.95_max_seed_sd": [
+   110.3,
+   68.1
+  ],
+  "ivf@0.95_upper_bounds": 0
+ },
+ "P1": {
+  "hnsw@0.9:pca256:across6": [
+   0.943,
+   0.017
+  ],
+  "hnsw@0.9:native:across6": [
+   0.886,
+   0.033
+  ],
+  "hnsw@0.9:pooled24": [
+   0.992,
+   0.96,
+   1.0
+  ],
+  "hnsw@0.9:within": {
+   "ConvNeXt-B": 1.0,
+   "ResNet-50": 0.8,
+   "DINOv2 ViT-B/14": 1.0,
+   "ViT-B/16": 1.0,
+   "MAE ViT-B/16": 1.0,
+   "CLIP ViT-B/16": 1.0
+  },
+  "hnsw@0.9:pooled_upper_bounds": 6,
+  "hnsw@0.95:pca256:across6": [
+   0.943,
+   0.017
+  ],
+  "hnsw@0.95:native:across6": [
+   0.886,
+   0.033
+  ],
+  "hnsw@0.95:pooled24": [
+   0.99,
+   0.95,
+   1.0
+  ],
+  "hnsw@0.95:within": {
+   "ConvNeXt-B": 1.0,
+   "ResNet-50": 0.8,
+   "DINOv2 ViT-B/14": 1.0,
+   "ViT-B/16": 1.0,
+   "MAE ViT-B/16": 1.0,
+   "CLIP ViT-B/16": 1.0
+  },
+  "hnsw@0.95:pooled_upper_bounds": 0,
+  "ivf@0.9:pca256:across6": [
+   0.886,
+   0.033
+  ],
+  "ivf@0.9:native:across6": [
+   0.429,
+   0.419
+  ],
+  "ivf@0.9:pooled24": [
+   0.922,
+   0.68,
+   0.99
+  ],
+  "ivf@0.9:within": {
+   "ConvNeXt-B": 1.0,
+   "ResNet-50": 0.8,
+   "DINOv2 ViT-B/14": 1.0,
+   "ViT-B/16": 0.8,
+   "MAE ViT-B/16": 1.0,
+   "CLIP ViT-B/16": 1.0
+  },
+  "ivf@0.9:pooled_upper_bounds": 0,
+  "ivf@0.95:pca256:across6": [
+   0.886,
+   0.033
+  ],
+  "ivf@0.95:native:across6": [
+   0.943,
+   0.017
+  ],
+  "ivf@0.95:pooled24": [
+   0.943,
+   0.71,
+   0.99
+  ],
+  "ivf@0.95:within": {
+   "ConvNeXt-B": 0.8,
+   "ResNet-50": 0.8,
+   "DINOv2 ViT-B/14": 1.0,
+   "ViT-B/16": 0.4,
+   "MAE ViT-B/16": 1.0,
+   "CLIP ViT-B/16": 1.0
+  },
+  "ivf@0.95:pooled_upper_bounds": 0
+ },
+ "P2": {
+  "ndis@0.9": {
+   "image": 352,
+   "text": 545
+  },
+  "ratio@0.9": 1.55,
+  "ndis@0.95": {
+   "image": 467,
+   "text": 762
+  },
+  "ratio@0.95": 1.63,
+  "ndis@0.99": {
+   "image": 803,
+   "text": 2213
+  },
+  "ratio@0.99": 2.76,
+  "at_ef10": {
+   "image": [
+    0.861,
+    307
+   ],
+   "text": [
+    0.677,
+    284
+   ]
+  },
+  "max_recall": {
+   "image": 1.0,
+   "text": 0.9986
+  },
+  "table": [
+   {
+    "query_type": "image",
+    "n_queries": 2020,
+    "qshift_nn": 0.981,
+    "qlid_median": 22.072,
+    "rc_q10": 1.602,
+    "label_p@10_exact": 0.792,
+    "ef_at_target": 16
+   },
+   {
+    "query_type": "text",
+    "n_queries": 808,
+    "qshift_nn": 2.515,
+    "qlid_median": 219.828,
+    "rc_q10": 1.089,
+    "label_p@10_exact": 0.964,
+    "ef_at_target": 64
+   }
+  ]
+ },
+ "P3": {
+  "ceiling": {
+   "ResNet-50": {
+    "64": 0.498,
+    "128": 0.574,
+    "256": 0.623
+   },
+   "ConvNeXt-B": {
+    "64": 0.579,
+    "128": 0.718,
+    "256": 0.801
+   },
+   "ViT-B/16": {
+    "64": 0.527,
+    "128": 0.656,
+    "256": 0.735
+   },
+   "CLIP ViT-B/16": {
+    "64": 0.626,
+    "128": 0.712,
+    "256": 0.739
+   },
+   "DINOv2 ViT-B/14": {
+    "64": 0.646,
+    "128": 0.786,
+    "256": 0.876
+   },
+   "MAE ViT-B/16": {
+    "64": 0.371,
+    "128": 0.343,
+    "256": 0.324
+   }
+  },
+  "e2e_feasible": {
+   "0.8": {
+    "ResNet-50": [
+     2048
+    ],
+    "ConvNeXt-B": [
+     256,
+     1024
+    ],
+    "ViT-B/16": [
+     768
+    ],
+    "CLIP ViT-B/16": [
+     512
+    ],
+    "DINOv2 ViT-B/14": [
+     256,
+     768
+    ],
+    "MAE ViT-B/16": [
+     768
+    ]
+   },
+   "0.9": {
+    "ResNet-50": [
+     2048
+    ],
+    "ConvNeXt-B": [
+     1024
+    ],
+    "ViT-B/16": [
+     768
+    ],
+    "CLIP ViT-B/16": [
+     512
+    ],
+    "DINOv2 ViT-B/14": [
+     768
+    ],
+    "MAE ViT-B/16": [
+     768
+    ]
+   }
+  },
+  "work@0.8:DINOv2 ViT-B/14": {
+   "native_ndis": 251,
+   "pca256_ndis": 246,
+   "native_over_256": 3.07
+  },
+  "work@0.8:ConvNeXt-B": {
+   "native_ndis": 281,
+   "pca256_ndis": 989,
+   "native_over_256": 1.14
+  },
+  "rho_lid_ceiling_without_mae": -0.9,
+  "rho_lid_ceiling_all": -0.086
+ },
+ "P45": {
+  "rows": [
+   {
+    "backbone": "ResNet-50",
+    "head": "head_hub",
+    "d_hub_skew": -0.55,
+    "d_qlid": 0.38,
+    "d_rc": 0.001,
+    "d_ndis_pct": -1.5,
+    "d_label_p": -0.004,
+    "d_ceiling": -0.062
+   },
+   {
+    "backbone": "ResNet-50",
+    "head": "head_koleo",
+    "d_hub_skew": -0.01,
+    "d_qlid": 3.28,
+    "d_rc": -0.09,
+    "d_ndis_pct": 13.7,
+    "d_label_p": 0.001,
+    "d_ceiling": -0.018
+   },
+   {
+    "backbone": "ConvNeXt-B",
+    "head": "head_hub",
+    "d_hub_skew": -0.54,
+    "d_qlid": -1.43,
+    "d_rc": 0.229,
+    "d_ndis_pct": -4.3,
+    "d_label_p": -0.008,
+    "d_ceiling": -0.139
+   },
+   {
+    "backbone": "ConvNeXt-B",
+    "head": "head_koleo",
+    "d_hub_skew": 0.0,
+    "d_qlid": 3.28,
+    "d_rc": -0.237,
+    "d_ndis_pct": 13.0,
+    "d_label_p": 0.0,
+    "d_ceiling": 0.055
+   },
+   {
+    "backbone": "ViT-B/16",
+    "head": "head_hub",
+    "d_hub_skew": -0.54,
+    "d_qlid": -1.06,
+    "d_rc": 0.103,
+    "d_ndis_pct": -6.5,
+    "d_label_p": -0.006,
+    "d_ceiling": -0.105
+   },
+   {
+    "backbone": "ViT-B/16",
+    "head": "head_koleo",
+    "d_hub_skew": -0.03,
+    "d_qlid": 3.38,
+    "d_rc": -0.148,
+    "d_ndis_pct": 15.0,
+    "d_label_p": 0.001,
+    "d_ceiling": -0.005
+   },
+   {
+    "backbone": "CLIP ViT-B/16",
+    "head": "head_hub",
+    "d_hub_skew": -0.38,
+    "d_qlid": 1.1,
+    "d_rc": -0.022,
+    "d_ndis_pct": 9.4,
+    "d_label_p": -0.016,
+    "d_ceiling": -0.045
+   },
+   {
+    "backbone": "CLIP ViT-B/16",
+    "head": "head_koleo",
+    "d_hub_skew": -0.05,
+    "d_qlid": 0.95,
+    "d_rc": -0.02,
+    "d_ndis_pct": 5.8,
+    "d_label_p": -0.003,
+    "d_ceiling": -0.019
+   },
+   {
+    "backbone": "DINOv2 ViT-B/14",
+    "head": "head_hub",
+    "d_hub_skew": -0.43,
+    "d_qlid": -1.07,
+    "d_rc": 0.27,
+    "d_ndis_pct": -4.8,
+    "d_label_p": -0.009,
+    "d_ceiling": -0.128
+   },
+   {
+    "backbone": "DINOv2 ViT-B/14",
+    "head": "head_koleo",
+    "d_hub_skew": 0.01,
+    "d_qlid": 3.18,
+    "d_rc": -0.301,
+    "d_ndis_pct": 6.8,
+    "d_label_p": 0.003,
+    "d_ceiling": 0.067
+   },
+   {
+    "backbone": "MAE ViT-B/16",
+    "head": "head_hub",
+    "d_hub_skew": -1.58,
+    "d_qlid": -7.0,
+    "d_rc": 0.294,
+    "d_ndis_pct": -33.5,
+    "d_label_p": -0.031,
+    "d_ceiling": 0.104
+   },
+   {
+    "backbone": "MAE ViT-B/16",
+    "head": "head_koleo",
+    "d_hub_skew": 1.4,
+    "d_qlid": 3.4,
+    "d_rc": -0.145,
+    "d_ndis_pct": 29.9,
+    "d_label_p": 0.021,
+    "d_ceiling": -0.046
+   }
+  ],
+  "sign_agreement": [
+   11,
+   12,
+   0.0063
+  ],
+  "head_hub": {
+   "d_hub_skew": [
+    0,
+    6,
+    -0.67,
+    -1.58,
+    -0.38
+   ],
+   "d_qlid": [
+    2,
+    4,
+    -1.513,
+    -7.0,
+    1.1
+   ],
+   "d_rc": [
+    5,
+    1,
+    0.146,
+    -0.022,
+    0.294
+   ],
+   "d_ndis_pct": [
+    1,
+    5,
+    -6.867,
+    -33.5,
+    9.4
+   ],
+   "d_label_p": [
+    0,
+    6,
+    -0.012,
+    -0.031,
+    -0.004
+   ],
+   "d_ceiling": [
+    1,
+    5,
+    -0.062,
+    -0.139,
+    0.104
+   ]
+  },
+  "head_koleo": {
+   "d_hub_skew": [
+    2,
+    3,
+    0.22,
+    -0.05,
+    1.4
+   ],
+   "d_qlid": [
+    6,
+    0,
+    2.912,
+    0.95,
+    3.4
+   ],
+   "d_rc": [
+    0,
+    6,
+    -0.157,
+    -0.301,
+    -0.02
+   ],
+   "d_ndis_pct": [
+    6,
+    0,
+    14.033,
+    5.8,
+    29.9
+   ],
+   "d_label_p": [
+    4,
+    1,
+    0.004,
+    -0.003,
+    0.021
+   ],
+   "d_ceiling": [
+    2,
+    4,
+    0.006,
+    -0.046,
+    0.067
+   ]
+  },
+  "pca_vs_rank_ceiling": {
+   "ResNet-50": [
+    0.623,
+    0.638
+   ],
+   "ConvNeXt-B": [
+    0.801,
+    0.695
+   ],
+   "ViT-B/16": [
+    0.735,
+    0.701
+   ],
+   "CLIP ViT-B/16": [
+    0.739,
+    0.535
+   ],
+   "DINOv2 ViT-B/14": [
+    0.876,
+    0.723
+   ],
+   "MAE ViT-B/16": [
+    0.324,
+    0.138
+   ]
+  }
+ },
+ "fig": {
+  "p1": [
+   {
+    "backbone": "ConvNeXt-B",
+    "reduction": "head_hub",
+    "qlid": 15.13,
+    "ndis": 251.6
+   },
+   {
+    "backbone": "ConvNeXt-B",
+    "reduction": "head_koleo",
+    "qlid": 19.84,
+    "ndis": 297.0
+   },
+   {
+    "backbone": "ConvNeXt-B",
+    "reduction": "head_rank",
+    "qlid": 16.56,
+    "ndis": 262.9
+   },
+   {
+    "backbone": "ConvNeXt-B",
+    "reduction": "pca",
+    "qlid": 19.53,
+    "ndis": 290.6
+   },
+   {
+    "backbone": "ResNet-50",
+    "reduction": "head_hub",
+    "qlid": 28.58,
+    "ndis": 554.3
+   },
+   {
+    "backbone": "ResNet-50",
+    "reduction": "head_koleo",
+    "qlid": 31.48,
+    "ndis": 639.8
+   },
+   {
+    "backbone": "ResNet-50",
+    "reduction": "head_rank",
+    "qlid": 28.2,
+    "ndis": 562.6
+   },
+   {
+    "backbone": "ResNet-50",
+    "reduction": "pca",
+    "qlid": 24.21,
+    "ndis": 471.7
+   },
+   {
+    "backbone": "DINOv2 ViT-B/14",
+    "reduction": "head_hub",
+    "qlid": 12.42,
+    "ndis": 225.1
+   },
+   {
+    "backbone": "DINOv2 ViT-B/14",
+    "reduction": "head_koleo",
+    "qlid": 16.67,
+    "ndis": 252.4
+   },
+   {
+    "backbone": "DINOv2 ViT-B/14",
+    "reduction": "head_rank",
+    "qlid": 13.49,
+    "ndis": 236.4
+   },
+   {
+    "backbone": "DINOv2 ViT-B/14",
+    "reduction": "pca",
+    "qlid": 16.45,
+    "ndis": 245.9
+   },
+   {
+    "backbone": "ViT-B/16",
+    "reduction": "head_hub",
+    "qlid": 21.61,
+    "ndis": 323.2
+   },
+   {
+    "backbone": "ViT-B/16",
+    "reduction": "head_koleo",
+    "qlid": 26.05,
+    "ndis": 397.7
+   },
+   {
+    "backbone": "ViT-B/16",
+    "reduction": "head_rank",
+    "qlid": 22.67,
+    "ndis": 345.7
+   },
+   {
+    "backbone": "ViT-B/16",
+    "reduction": "pca",
+    "qlid": 21.98,
+    "ndis": 333.4
+   },
+   {
+    "backbone": "MAE ViT-B/16",
+    "reduction": "head_hub",
+    "qlid": 33.48,
+    "ndis": 689.6
+   },
+   {
+    "backbone": "MAE ViT-B/16",
+    "reduction": "head_koleo",
+    "qlid": 43.88,
+    "ndis": 1346.4
+   },
+   {
+    "backbone": "MAE ViT-B/16",
+    "reduction": "head_rank",
+    "qlid": 40.48,
+    "ndis": 1036.7
+   },
+   {
+    "backbone": "MAE ViT-B/16",
+    "reduction": "pca",
+    "qlid": 20.86,
+    "ndis": 344.7
+   },
+   {
+    "backbone": "CLIP ViT-B/16",
+    "reduction": "head_hub",
+    "qlid": 32.33,
+    "ndis": 674.2
+   },
+   {
+    "backbone": "CLIP ViT-B/16",
+    "reduction": "head_koleo",
+    "qlid": 32.18,
+    "ndis": 652.2
+   },
+   {
+    "backbone": "CLIP ViT-B/16",
+    "reduction": "head_rank",
+    "qlid": 31.23,
+    "ndis": 616.4
+   },
+   {
+    "backbone": "CLIP ViT-B/16",
+    "reduction": "pca",
+    "qlid": 20.54,
+    "ndis": 326.0
+   }
+  ],
+  "p2": {
+   "image": [
+    [
+     307.3,
+     0.8613
+    ],
+    [
+     385.8,
+     0.9265
+    ],
+    [
+     572.2,
+     0.9752
+    ],
+    [
+     886.5,
+     0.9944
+    ],
+    [
+     1404.3,
+     0.9991
+    ],
+    [
+     2278.4,
+     0.9999
+    ],
+    [
+     3836.4,
+     1.0
+    ],
+    [
+     6704.8,
+     1.0
+    ],
+    [
+     11767.0,
+     1.0
+    ],
+    [
+     20089.4,
+     1.0
+    ]
+   ],
+   "text": [
+    [
+     284.0,
+     0.6775
+    ],
+    [
+     349.4,
+     0.7729
+    ],
+    [
+     506.7,
+     0.8892
+    ],
+    [
+     768.8,
+     0.9514
+    ],
+    [
+     1186.2,
+     0.9764
+    ],
+    [
+     1873.6,
+     0.9875
+    ],
+    [
+     3202.9,
+     0.9955
+    ],
+    [
+     6287.6,
+     0.9964
+    ],
+    [
+     11941.6,
+     0.9978
+    ],
+    [
+     20916.7,
+     0.9986
+    ]
+   ]
+  },
+  "p3": {
+   "ResNet-50": [
+    [
+     64,
+     0.498
+    ],
+    [
+     128,
+     0.574
+    ],
+    [
+     256,
+     0.623
+    ]
+   ],
+   "ConvNeXt-B": [
+    [
+     64,
+     0.579
+    ],
+    [
+     128,
+     0.718
+    ],
+    [
+     256,
+     0.801
+    ]
+   ],
+   "ViT-B/16": [
+    [
+     64,
+     0.527
+    ],
+    [
+     128,
+     0.656
+    ],
+    [
+     256,
+     0.735
+    ]
+   ],
+   "CLIP ViT-B/16": [
+    [
+     64,
+     0.626
+    ],
+    [
+     128,
+     0.712
+    ],
+    [
+     256,
+     0.739
+    ]
+   ],
+   "DINOv2 ViT-B/14": [
+    [
+     64,
+     0.646
+    ],
+    [
+     128,
+     0.786
+    ],
+    [
+     256,
+     0.876
+    ]
+   ],
+   "MAE ViT-B/16": [
+    [
+     64,
+     0.371
+    ],
+    [
+     128,
+     0.343
+    ],
+    [
+     256,
+     0.324
+    ]
+   ]
+  }
+ },
+ "card": {
+  "ResNet-50": {
+   "dim": 2048,
+   "twonn": 33.2,
+   "qlid": 31.8,
+   "rc": 1.45,
+   "hub": 2.62,
+   "antihub": 0.057,
+   "cos": 0.42,
+   "top1": 0.07,
+   "kmerr": 0.66,
+   "shift": 0.99,
+   "pca256": 0.62,
+   "pca128": 0.57,
+   "pca64": 0.5,
+   "sq8": 0.98,
+   "sq4": 0.71,
+   "bin1": 0.15,
+   "hnsw": 539,
+   "ivf": 3684,
+   "labelp": 0.42
+  },
+  "ConvNeXt-B": {
+   "dim": 1024,
+   "twonn": 26.6,
+   "qlid": 23.5,
+   "rc": 1.61,
+   "hub": 1.92,
+   "antihub": 0.064,
+   "cos": 0.2,
+   "top1": 0.06,
+   "kmerr": 0.57,
+   "shift": 0.98,
+   "pca256": 0.8,
+   "pca128": 0.72,
+   "pca64": 0.58,
+   "sq8": 0.99,
+   "sq4": 0.9,
+   "bin1": 0.63,
+   "hnsw": 304,
+   "ivf": 1334,
+   "labelp": 0.78
+  },
+  "ViT-B/16": {
+   "dim": 768,
+   "twonn": 29.8,
+   "qlid": 26.1,
+   "rc": 1.48,
+   "hub": 1.96,
+   "antihub": 0.069,
+   "cos": 0.37,
+   "top1": 0.05,
+   "kmerr": 0.64,
+   "shift": 0.99,
+   "pca256": 0.73,
+   "pca128": 0.66,
+   "pca64": 0.53,
+   "sq8": 0.99,
+   "sq4": 0.8,
+   "bin1": 0.54,
+   "hnsw": 353,
+   "ivf": 1436,
+   "labelp": 0.77
+  },
+  "CLIP ViT-B/16": {
+   "dim": 512,
+   "twonn": 25.7,
+   "qlid": 21.7,
+   "rc": 1.62,
+   "hub": 2.06,
+   "antihub": 0.093,
+   "cos": 0.7,
+   "top1": 0.07,
+   "kmerr": 0.58,
+   "shift": 0.98,
+   "pca256": 0.74,
+   "pca128": 0.71,
+   "pca64": 0.63,
+   "sq8": 0.97,
+   "sq4": 0.67,
+   "bin1": 0.48,
+   "hnsw": 336,
+   "ivf": 1327,
+   "labelp": 0.79
+  },
+  "DINOv2 ViT-B/14": {
+   "dim": 768,
+   "twonn": 22.8,
+   "qlid": 19.0,
+   "rc": 1.81,
+   "hub": 1.77,
+   "antihub": 0.062,
+   "cos": 0.09,
+   "top1": 0.05,
+   "kmerr": 0.5,
+   "shift": 0.98,
+   "pca256": 0.88,
+   "pca128": 0.79,
+   "pca64": 0.65,
+   "sq8": 0.99,
+   "sq4": 0.89,
+   "bin1": 0.62,
+   "hnsw": 251,
+   "ivf": 931,
+   "labelp": 0.82
+  },
+  "MAE ViT-B/16": {
+   "dim": 768,
+   "twonn": 21.7,
+   "qlid": 18.6,
+   "rc": 3.76,
+   "hub": 1.52,
+   "antihub": 0.049,
+   "cos": 0.92,
+   "top1": 0.69,
+   "kmerr": 0.1,
+   "shift": 0.99,
+   "pca256": 0.32,
+   "pca128": 0.34,
+   "pca64": 0.37,
+   "sq8": 0.52,
+   "sq4": 0.03,
+   "bin1": 0.06,
+   "hnsw": 279,
+   "ivf": 1441,
+   "labelp": 0.05
+  }
+ }
+}

@@ -1,0 +1,6 @@
+method,mean_score,mean_regret,worst_score,n_models
+ours,1.0,0.0,1.0,6
+prior_only,1.0,0.0,1.0,6
+global_best,1.0,0.0,1.0,6
+nn_dataset,1.0,0.0,1.0,6
+random,0.0581912011352117,0.9418087988647883,0.05401779867539859,6

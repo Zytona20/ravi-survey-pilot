@@ -1,0 +1,7 @@
+family,model,n_configs,n_feasible,oracle_qps,ours,prior_only,global_best,nn_dataset,random,nearest_train_model,pred_spearman,picked
+clip,vit_base_patch16_clip_224.openai,21,3,2645.4790900985736,1.0,1.0,1.0,1.0,0.05979143111157521,vit_base_patch16_224.augreg_in21k_ft_in1k,1.0,native|0|hnsw|hnsw_M16_efc200
+convnext,convnext_base.fb_in22k_ft_in1k,21,3,2868.7364566416127,1.0,1.0,1.0,1.0,0.05910621901344621,vit_base_patch16_224.augreg_in21k_ft_in1k,1.0,native|0|hnsw|hnsw_M16_efc200
+dinov2,vit_base_patch14_dinov2.lvd142m,21,3,3977.6671511454547,1.0,1.0,1.0,1.0,0.05828537607021055,convnext_base.fb_in22k_ft_in1k,1.0,native|0|hnsw|hnsw_M16_efc200
+mim,vit_base_patch16_224.mae,21,3,2895.0270307965657,1.0,1.0,1.0,1.0,0.05803861476431281,vit_base_patch16_clip_224.openai,1.0,native|0|hnsw|hnsw_M16_efc200
+resnet,resnet50.a1_in1k,21,3,1480.4413357451506,1.0,1.0,1.0,1.0,0.05401779867539859,vit_base_patch16_224.augreg_in21k_ft_in1k,1.0,native|0|hnsw|hnsw_M16_efc200
+vit-supervised,vit_base_patch16_224.augreg_in21k_ft_in1k,21,3,2632.0474367608404,1.0,1.0,1.0,1.0,0.059907767176326863,convnext_base.fb_in22k_ft_in1k,1.0,native|0|hnsw|hnsw_M16_efc200
